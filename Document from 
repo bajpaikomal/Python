@@ -1,0 +1,307 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Question and Answers**"
+      ],
+      "metadata": {
+        "id": "atWceej_wpw2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 1):** What is Simple Linear Regression (SLR)?\n",
+        " Explain its purpose"
+      ],
+      "metadata": {
+        "id": "_jNWKeKhwzBN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "Simple Linear Regression (SLR) is a statistical method used to model the relationship between two variables by fitting a linear equation to observed data.\n",
+        "\n",
+        "One variable is considered the independent variable (predictor), and the other is the dependent variable (response). The purpose of SLR is to predict the value of the dependent variable based on the value of the independent variable and to understand the strength and direction of their relationship"
+      ],
+      "metadata": {
+        "id": "xwXCBVdyw-yd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 2):** What are the key assumptions of Simple Linear Regression?"
+      ],
+      "metadata": {
+        "id": "nECYipWLxRHl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "The key assumptions of Simple Linear Regression are:\n",
+        "\n",
+        "1.   Linearity: The relationship between the independent and dependent variables is linear.\n",
+        "2.   Independence: Observations are independent of each other.\n",
+        "3.   Homoscedasticity: The variance of the residuals (errors) is constant across all levels of the independent variable.\n",
+        "4.   Normality: The residuals are normally distributed.\n",
+        "5.   No multicollinearity: In SLR, there is only one independent variable, so multicollinearity is not a concern"
+      ],
+      "metadata": {
+        "id": "zsAe2AtdxbKt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 3):** Write the mathematical equation for a simple linear regression model and explain each term."
+      ],
+      "metadata": {
+        "id": "qh84Ba8jx4Wd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "The equation for a simple linear regression model is: y = β₀ + β₁x + ε\n",
+        "\n",
+        "    Where:\n",
+        "\n",
+        "    y: Dependent variable (response variable).\n",
+        "    x: Independent variable (predictor variable).\n",
+        "    β₀: Intercept (value of y when x = 0).\n",
+        "    β₁: Slope (rate of change in y for a unit change in x).\n",
+        "    ε: Error term (difference between observed and predicted values).*italicised text*"
+      ],
+      "metadata": {
+        "id": "MthAwspIyBlt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 4):** Provide a real-world example where simple linear regression can be applied."
+      ],
+      "metadata": {
+        "id": "5yLfIhjRyoA1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "A real-world example of simple linear regression is predicting a person's weight based on their height. Height can be used as the independent variable, and weight as the dependent variable. The model can help estimate the weight of a person given their height."
+      ],
+      "metadata": {
+        "id": "TefsLd2myw3U"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 5):** What is the method of least squares in linear regression?"
+      ],
+      "metadata": {
+        "id": "KgEuAL_Zy3-t"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "The method of least squares is a mathematical approach used to find the best-fitting line in linear regression.\n",
+        " It minimizes the sum of the squared differences between the observed values and the predicted values (residuals).\n",
+        " This ensures that the line is as close as possible to the data points."
+      ],
+      "metadata": {
+        "id": "EFwEu4hUy-0_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 6):** What is Logistic Regression?\n",
+        " How does it differ from Linear Regression?"
+      ],
+      "metadata": {
+        "id": "2HPzWvZpzHjl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "Logistic Regression is a statistical method used for binary classification problems, where the dependent variable is categorical (e.g., yes/no, 0/1). It predicts the probability of an event occurring using a logistic function (sigmoid curve).\n",
+        "\n",
+        "Difference:\n",
+        "\n",
+        "\n",
+        "*   Linear Regression predicts continuous values, while Logistic Regression\n",
+        "predicts probabilities for categorical outcomes.\n",
+        "*   Logistic Regression uses a sigmoid function, whereas Linear Regression uses a straight line\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "D_cZozt1zO-1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 7):** Name and briefly describe three common evaluation metrics for regression models."
+      ],
+      "metadata": {
+        "id": "QqZN7b9nznYt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**  \n",
+        "\n",
+        "Three common evaluation metrics for regression models.\n",
+        "\n",
+        "*   Mean Absolute Error (MAE): Measures the average magnitude of errors between predicted and actual values.\n",
+        "*   Mean Squared Error (MSE): Calculates the average of squared differences between predicted and actual values, penalizing larger errors more heavily.\n",
+        "*   R-squared (Coefficient of Determination): Indicates the proportion of variance in the dependent variable explained by the independent variable(s)."
+      ],
+      "metadata": {
+        "id": "AdaJ4Iykz3t9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 8):** What is the purpose of the R-squared metric in regression analysis?"
+      ],
+      "metadata": {
+        "id": "g8l8NksO0Sat"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "\n",
+        "R-squared measures the proportion of the variance in the dependent variable that is explained by the independent variable(s) in the model.\n",
+        " It indicates how well the regression model fits the data, with values closer to 1 representing a better fit."
+      ],
+      "metadata": {
+        "id": "diMl2iPo0cBd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 9):** Write Python code to fit a simple linear regression model using scikit-learn and print the slope and intercept."
+      ],
+      "metadata": {
+        "id": "Qdciuvlr0hdE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.linear_model import LinearRegression\n",
+        "import numpy as np\n",
+        "\n",
+        "X = np.array([[1], [2], [3], [4], [5]])\n",
+        "y = np.array([2, 4, 6, 8, 10])\n",
+        "\n",
+        "model = LinearRegression()\n",
+        "model.fit(X, y)\n",
+        "\n",
+        "print(\"Slope (β₁):\", model.coef_[0])\n",
+        "print(\"Intercept (β₀):\", model.intercept_)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KAUKSC880xFF",
+        "outputId": "5838f7c3-2092-4654-d7e5-10b914f44fd6"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Slope (β₁): 2.0\n",
+            "Intercept (β₀): 0.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**(Question 10):** How do you interpret the coefficients in a simple linear regression model?"
+      ],
+      "metadata": {
+        "id": "9_bk419X0_p0"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer:**\n",
+        "\n",
+        "Intercept (β₀): Represents the predicted value of the dependent variable when the independent variable is zero.\n",
+        "\n",
+        "Slope (β₁): Indicates the change in the dependent variable for a one-unit increase in the independent variable. A positive slope means a positive relationship, while a negative slope indicates a negative relationship."
+      ],
+      "metadata": {
+        "id": "gtNxTD6S1ECN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "pC7FCfkZ1tLN"
+      }
+    }
+  ]
+}
